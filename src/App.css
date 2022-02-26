@@ -23,6 +23,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.QuoteBox{
+  text-align: center;
+  margin: 15px;
+  border-radius: 500px;
+  border-style: double;
+}
+
+button{
+  width: 50px;
+}
 
 .App-link {
   color: #61dafb;

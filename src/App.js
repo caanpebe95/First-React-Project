@@ -1,15 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 import quotes from './quotes.json'
+import QuoteBox from './Components/QuoteBox';
+
 
 function App() {
-  const quote = quotes[0];
+
   return (
     <div className="App">
-      <h1>{quote.quote}</h1>
-      <p>{quote.author}</p>
+      <QuoteBox />
     </div>
   );
 }
 
 export default App;
+
+
+
