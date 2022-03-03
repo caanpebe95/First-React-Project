@@ -1,5 +1,3 @@
-import './App.css';
-import quotes from './quotes.json'
 import QuoteBox from './Components/QuoteBox';
 
 
