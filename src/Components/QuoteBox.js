@@ -4,10 +4,12 @@ import '../App.css';
 import { useState } from 'react';
 import App from '../App'
 
+    const shuffle = () => Math.floor(Math.random() * quotes.length)
+
+    const colors = ["#845EC2", "#00C9A7", "#C34A36", "#B0A8B9", "#9B89B3", "#008BC6", "#926D00","#FF9671","#FFC75F"];
 
 const QuoteBox = () => {
 
-    const shuffle = () => Math.floor(Math.random() * quotes.length)
 
     const [ quote , setQuote ] = useState(quotes[shuffle()]);
 
@@ -16,17 +18,19 @@ const QuoteBox = () => {
     const changeQuote = () => {
         setQuote(quotes[shuffle()])
     }
+
+    document.body.style = `background: ${colors[Math.floor(Math.random() * 9)]}`
+
     return (
         <div class="QuoteBox">
             <h1>{quote.quote}</h1>
             <p>{quote.author}</p> 
-            <button onClick={changeQuote}></button>
-            <i className="fad fa-archive"></i>
+            <button onClick={changeQuote}>
+            <i className="fa-solid fa-shuffle"></i>
+            </button>
         </div>
     );
 };
-
-// 02.03.21
 
 
 export default QuoteBox;
