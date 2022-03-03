@@ -2,7 +2,6 @@ import React from 'react';
 import quotes from '../quotes.json'
 import '../App.css';
 import { useState } from 'react';
-import App from '../App'
 
     const shuffle = () => Math.floor(Math.random() * quotes.length)
 
