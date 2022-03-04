@@ -1,3 +1,4 @@
+import './App.css';
 import QuoteBox from './Components/QuoteBox';
 
 
